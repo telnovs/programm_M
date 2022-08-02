@@ -1,0 +1,235 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+ /*====================================== <body >      ================================================================== */
+  #body{
+    margin: 10px 60px;
+    background-color:cadetblue;
+  }
+  .main{
+    display: flex;
+    flex-direction: row;
+    align-content:stretch;
+  }
+ /*====================================== <кнопки входа и регистрации >  ================================================================== */
+  .button{
+    margin: 0 auto;
+  }
+  .button__link{
+    margin: 0 auto;
+    padding: 10px 10px;
+    list-style-type: none;
+    text-align: right;
+  }
+/*====================================== <tabl_matrix>  ================================================================== */
+/* #tabl_matrix{
+  width: 500px;
+  height: 300px;
+}
+.matrix__tabl{
+  width: 500px;
+  height: 500px;
+}
+.matrix_tabl_thead{
+  width: 500px;
+  height: 100px; 
+ } */
+.matrix_tabl {
+  border-spacing: 0 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  }
+  .matrix_tabl th {
+  padding: 5px 10px;
+  background: #56433D;
+  color: #F9C941;
+  border-right: 2px solid; 
+  font-size: 0.9em;
+  }
+  .matrix_tabl th:first-child {
+  text-align: left;
+  }
+  .matrix_tabl th:last-child {
+  border-right: none;
+  }
+  .matrix_tabl td {
+  vertical-align: middle;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 2px solid #56433D;
+  border-bottom: 2px solid #56433D;
+  border-right: 2px solid #56433D;
+  }
+  .matrix_tabl td:first-child {
+  border-left: 2px solid #56433D;
+  border-right: none;
+  }
+  .matrix_tabl td:nth-child(2){
+  text-align: left;
+  }
+ /*====================================== <кнопки удалить и добавить >  ================================================================== */
+  .buttons{
+    display: block;
+    width: 500px;
+    bottom: 0px;
+    right: 10px;
+  }
+  .buttons__select{
+    position:relative ;
+    right: 0;
+    
+  }
+/*====================================== <section>  ================================================================== */
+.one, .two, .three{
+  margin: 10px;
+  padding: 5px;
+  width: 33%;
+}
+/*====================================== <section-one>  ================================================================== */
+/*====================================== <section-two>  ================================================================== */
+.two{
+  text-align: center;
+}
+.time{
+  width: 200px;
+  height: 100px;
+  border:  1px solid black;
+  text-align: center;
+  align-content: center;
+  margin: 10% auto;
+  padding-top: 20px;
+}
+/*====================================== <section-three>  ================================================================== */
+.results {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  border-collapse: collapse;
+  color: #686461;
+}
+.results caption {
+  padding: 10px;
+  color: white;
+  background: #8FD4C1;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+  text-align: center;
+}
+.results th {
+  border-bottom: 3px solid #B9B29F;
+  padding: 10px;
+  text-align: left;
+}
+.results td {
+  padding: 10px;
+}
+.results tr:nth-child(odd) {
+  background: white;
+}
+.results tr:nth-child(even) {
+  background: #E8E6D1;
+}
+
+/* ==================================================== */
+
+ 
+.countdown {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+ 
+.countdown-number {
+  padding: 10px;
+  border-radius: 3px;
+  background: #00bf96;
+  display: inline-block;
+  margin-top: 70px;
+}
+ 
+.countdown-time {
+  padding: 15px;
+  border-radius: 3px;
+  background: #00816a;
+  display: inline-block;
+}
+ 
+.countdown-text {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}

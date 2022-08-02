@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programm_M</title>
+  <link rel="stylesheet" href="../src/index.css">
+</head>
+<body id="body">
+  <div class="button">
+    <li class="button__link">  
+      <a class = "button__link_a" href=""><button id="input">Войти</button></a>
+      <a class = "button__link_a" href=""><button id ="registration">Регистрация</button></a>
+    </li> 
+  </div>
+  <div class="main">   
+    <section class="one">
+      <div id="tabl_matrix">
+        <table class="matrix_tabl">
+          <thead class="matrix_tabl_thead">
+            <tr>
+              <th>вид матрицы</th>
+              <th>№ матрицы</th>
+              <th>Размер</th>
+              <th>Последнее время отпекания</th>
+            </tr>  
+          </thead>
+        <tbody class="matrix_tabl__line"> 
+            <tr>
+              <th>
+                  <select class="matrix_tabl__list" size="1" required>
+                    <option value="1">Юнилайн</option>
+                    <option value="2">Тиара</option>
+                    <option value="3">Трикуспидальное кольцо</option>
+                  </select>   
+              </th>
+                <th>
+                  <select class="matrix_tabl__namber" size="1" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>  
+                </th>
+                <th>
+                  <select class="matrix_tabl__size" size="1" required>
+                    <option value="1">19</option>
+                    <option value="2">21</option>
+                    <option value="3">23</option>
+                  </select> 
+                </th>
+                <th>5:30</th>
+            </tr>
+          </tbody>
+          
+        </table>
+      </div>  
+      <div class="buttons">
+          <button class="buttons__delete">Удалить</button>
+          <button class="buttons__delete">Добавить</button>
+          <button class="buttons__select">Выбрать</button>
+      </div>
+    </section>
+    <setion class="two">  
+      <div class="start__button">
+        <button>Пуск</button>
+      </div>
+      <div class="time">
+        <input type="time" step="1" value="timer"></input> 
+        <button>+</button>
+        <button>-</button>
+      <div id="countdown" class="countdown">
+        <div class="countdown-number">
+          <span class="minutes countdown-time"></span>
+          <span class="countdown-text">Minutes</span>
+        </div>
+        <div class="countdown-number">
+          <span class="seconds countdown-time"></span>
+          <span class="countdown-text">Seconds</span>
+        </div>
+      </div>
+        
+      </div>    
+    </setion>s
+    <section class="three"> 
+      <table class="results">
+        <thead>
+          <caption>
+            Сводная таблица за день
+          </caption>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Исполнитель</th>
+            <th>вид матрицы</th>
+            <th>№ матрицы</th>
+            <th>Размер</th>
+            <th>Последнее время отпекания</th>
+          </tr>
+          <tr>
+            <td>Тельнов С.А</td>
+            <td>Юнилайн</td>
+            <td>3</td>
+            <td>26</td>
+            <td>6:10</td>
+          </tr>
+        </tbody>
+      </table>   
+    </section>
+  </div>
+  <script type="text/javascript" src="../src/index.js" ></script>  
+</body>
+</html>
